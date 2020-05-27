@@ -26,12 +26,18 @@ export class HomeComponent implements OnInit {
                 hasInterval: false,
                 shadow: true,
                 cornerRadius: 0,
+                margin: [0, 0, 0, 0],
+                padding: [0, 0, 0, 0],
+                color: "yellow",
             },
             android: {
-                backgroundColor: "white",
                 position: "bottom",
-                style: "CustomToolTipLayoutStyle",
+                style: "ToolTipLayoutCustomStyle",
             },
         });
+
+        setTimeout(() => {
+            tooltip.dismiss();
+        }, 1500);
     }
 }

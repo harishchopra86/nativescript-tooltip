@@ -6,6 +6,9 @@ export interface Options {
     interval?: number;
     shadow?: boolean;
     cornerRadius?: number;
+    padding: Array<any>;
+    margin: Array<any>;
+    color: string;
   };
   android?: {
     position?: ToolTipPosition;
@@ -15,8 +18,6 @@ export interface Options {
     width?: number;
     delay?: number;
     hideArrow?: boolean;
-    backgroundColor?: string;
-    textColor?: string;
     style?: string;
   };
 }

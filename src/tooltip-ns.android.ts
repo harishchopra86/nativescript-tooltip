@@ -77,6 +77,8 @@ export class TooltipNs {
       );
     }
 
+    // this.builder.floatingAnimation(0);
+
     this.tip = it.sephiroth.android.library.tooltip.Tooltip.make(
       app.android.foregroundActivity,
       this.builder.build()

@@ -1,9 +1,11 @@
 import { Options } from "./tooltip-ns.common";
 import { Frame } from "tns-core-modules/ui/frame";
+import { Color } from "tns-core-modules/color";
 
 declare const UIEdgeInsetsMake;
 
 export class TooltipNs {
+  backgroundColorDefault = "white";
   tooltip: SexyTooltip;
 
   public show(options: Options) {
@@ -15,14 +17,25 @@ export class TooltipNs {
     this.tooltip = SexyTooltip.alloc().initWithAttributedStringSizedToViewWithPaddingAndMargin(
       nsAttributed,
       self.view,
-      UIEdgeInsetsMake(10, 5, 10, 5),
-      UIEdgeInsetsMake(10, 10, 10, 10)
+      UIEdgeInsetsMake(
+        options.ios.padding[0],
+        options.ios.padding[1],
+        options.ios.padding[2],
+        options.ios.padding[3]
+      ),
+      UIEdgeInsetsMake(
+        options.ios.margin[0],
+        options.ios.margin[1],
+        options.ios.margin[2],
+        options.ios.margin[3]
+      )
     );
 
     if (options.ios.shadow) {
       this.tooltip.hasShadow = true;
     }
 
+    this.tooltip.color = new Color(options.ios.color).ios;
     this.tooltip.cornerRadius = options.ios.cornerRadius;
 
     this.tooltip.presentFromViewInViewWithMarginAnimated(
@@ -38,6 +51,8 @@ export class TooltipNs {
   }
 
   public dismiss() {
-    this.tooltip.dismiss();
+    if (this.tooltip != undefined) {
+      this.tooltip.dismiss();
+    }
   }
 }
