@@ -10,7 +10,7 @@ tns plugin add nativescript-tooltip-ns
 
 ## Screenshot
 
-<img alt="Android" src="https://res.cloudinary.com/dem02bcqj/image/upload/v1591193248/WhatsApp_Image_2020-06-03_at_9.06.52_AM.jpg" width="550" height="100">
+<img alt="Android" src="https://res.cloudinary.com/dem02bcqj/image/upload/v1591193248/WhatsApp_Image_2020-06-03_at_9.06.52_AM.jpg" width="550" height="550">
 
 ## Usage
 
