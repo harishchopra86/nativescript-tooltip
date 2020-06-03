@@ -1,6 +1,6 @@
 {
   "name": "nativescript-tooltip-ns",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NativeScript Tooltip",
   "main": "tooltip-ns",
   "typings": "index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nericodec/nativescript-tooltip-ns.git"
+    "url": "https://github.com/NeriCodec/nativescript-tooltip.git"
   },
   "scripts": {
     "tsc": "npm i && tsc",
@@ -37,14 +37,14 @@
     "iOS"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "youremail@yourdomain.com"
+    "name": "Alan Neri",
+    "email": "alanneri10@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/nericodec/nativescript-tooltip-ns/issues"
+    "url": "https://github.com/NeriCodec/nativescript-tooltip/issues"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/nericodec/nativescript-tooltip-ns",
+  "homepage": "https://github.com/NeriCodec/nativescript-tooltip",
   "devDependencies": {
     "tns-core-modules": "^6.0.0",
     "tns-platform-declarations": "^6.0.0",
