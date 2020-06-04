@@ -1,6 +1,6 @@
 {
   "name": "nativescript-tooltip-ns",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NativeScript Tooltip",
   "main": "tooltip-ns",
   "typings": "index.d.ts",
