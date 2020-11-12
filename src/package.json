@@ -41,10 +41,10 @@
     "email": "alanneri10@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/NeriCodec/nativescript-tooltip/issues"
+    "url": "https://github.com/harishchopra86/nativescript-tooltip/issues"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/NeriCodec/nativescript-tooltip",
+  "homepage": "https://github.com/harishchopra86/nativescript-tooltip",
   "devDependencies": {
     "tns-core-modules": "^6.0.0",
     "tns-platform-declarations": "^6.0.0",
