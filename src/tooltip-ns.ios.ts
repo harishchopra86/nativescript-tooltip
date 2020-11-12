@@ -10,6 +10,14 @@ export class TooltipNs {
 
   public show(options: Options) {
     let self = Frame.topmost().ios.controller;
+    var nsAttributed = NSAttributedString.alloc().initWithStringAttributes(
+      options.message,
+      new NSDictionary(
+        [new color_1.Color(options.ios.textColor).ios],
+        [NSForegroundColorAttributeName]
+      )
+    );
+
     let nsAttributed = NSAttributedString.alloc().initWithString(
       options.message
     );
